@@ -847,8 +847,8 @@ QBShared.Jobs = {
 		label = "AoD MC Mech",
 		grades = {
 			['0'] = {
-					name = "Recruit",
-					payment = 330
+				name = "Recruit",
+				payment = 330
 			},
 			['1'] = {
 				name = "Mechanic",
@@ -862,6 +862,29 @@ QBShared.Jobs = {
 		},
 		["boss"] = {
 			[1] = {x = 780.78, y = -1611.72, z = 32.0, h = 236.5}, 
+		},
+		defaultDuty = true,
+	},
+		-----------------------------------------------------------------------MECHANIC #6 (SoA mechanic)
+	["mechanic6"] = { 
+		label = "SoA MC Mech",
+		grades = {
+			['0'] = {
+				name = "Recruit",
+				payment = 330
+			},
+			['1'] = {
+				name = "Mechanic",
+				payment = 430
+			},
+			['4'] = {
+				name = "Owner",
+				isboss = true,
+				payment = 1623
+			},
+		},
+		["boss"] = {
+			[1] = {x = 37.59, y = 6463.51, z = 32.07, h = 284.5}, 
 		},
 		defaultDuty = true,
 	},
