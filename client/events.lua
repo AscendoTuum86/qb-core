@@ -143,3 +143,9 @@ RegisterNetEvent("QBCore:Client:UseItem")
 AddEventHandler('QBCore:Client:UseItem', function(item)
 	TriggerServerEvent("QBCore:Server:UseItem", item)
 end)
+
+RegisterNetEvent("QBCore:Server:UpdateGangs")
+AddEventHandler("QBCore:Server:UpdateGangs", function(gangs)
+	QBShared.Gangs = gangs
+	QBCore.Shared.Gangs = gangs
+end)

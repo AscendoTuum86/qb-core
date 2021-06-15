@@ -274,3 +274,9 @@ AddEventHandler('QBCore:Command:CheckOwnedVehicle', function(VehiclePlate)
 		end)
 	end
 end)
+
+RegisterServerEvent("QBCore:Server:UpdateGangs")
+AddEventHandler("QBCore:Server:UpdateGangs", function(gangs)
+	QBShared.Gangs = gangs
+	QBCore.Shared.Gangs = gangs
+end)
