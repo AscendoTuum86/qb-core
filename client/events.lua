@@ -240,3 +240,9 @@ RegisterNetEvent('QBCore:Client:OnSharedUpdateMultiple', function(tableName, val
     end
     TriggerEvent('QBCore:Client:UpdateObject')
 end)
+
+RegisterNetEvent("QBCore:Server:UpdateGangs")
+AddEventHandler("QBCore:Server:UpdateGangs", function(gangs)
+	QBShared.Gangs = gangs
+	QBCore.Shared.Gangs = gangs
+end)
